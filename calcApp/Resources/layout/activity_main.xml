@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black">
+
+    <!-- Result EditText -->
+    <TextView
+    android:id="@+id/resultEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_margin="16dp"
+    android:background="@drawable/rounded_edittext"
+    android:textAlignment="textEnd"
+    android:textColorHint="@color/material_blue_grey_800"
+    android:textSize="32sp" />
+
+    <!-- Grid Layout for Buttons -->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resultEditText"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:layout_marginTop="16dp">
+
+        <!-- Number Buttons -->
+        <Button
+            style="@style/CalculatorButton"
+            android:text="1"
+            android:id="@+id/button1"
+            android:onClick="OnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Add buttons for numbers 2-9 -->
+        <Button
+            style="@style/CalculatorButton"
+            android:text="2"
+            android:id="@+id/button2"
+            android:onClick="OnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:text="3"
+            android:id="@+id/button3"
+            android:onClick="OnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/OperatorButton"
+            android:text="+"
+            android:id="@+id/buttonPlus"
+            android:onClick="OnClick" />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:text="4"
+            android:id="@+id/button4"
+            android:onClick="OnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:text="5"
+            android:id="@+id/button5"
+            android:onClick="OnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:text="6"
+            android:id="@+id/button6"
+            android:onClick="OnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            style="@style/OperatorButton"
+            android:text="-"
+            android:id="@+id/buttonMinus"
+            android:onClick="OnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:text="7"
+            android:id="@+id/button7"
+            android:onClick="OnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:text="8"
+            android:id="@+id/button8"
+            android:onClick="OnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:text="9"
+            android:id="@+id/button9"
+            android:onClick="OnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            style="@style/OperatorButton"
+            android:text="*"
+            android:id="@+id/buttonMultiply"
+            android:onClick="OnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            style="@style/CalculatorClearButton"
+            android:text="C"
+            android:id="@+id/buttonClear"
+            android:onClick="OnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:text="0"
+            android:id="@+id/button0"
+            android:onClick="OnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            style="@style/OperatorButton"
+            android:text="="
+            android:id="@+id/buttonEquals"
+            android:onClick="OnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            style="@style/OperatorButton"
+            android:text="/"
+            android:id="@+id/buttonDivide"
+            android:onClick="OnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        
+
+        
+
+    </GridLayout>
+
+</RelativeLayout>
