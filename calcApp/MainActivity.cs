@@ -9,7 +9,7 @@ using Java.Lang;
 namespace calcApp
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
-    public class MainActivity : AppCompatActivity 
+    public class MainActivity : AppCompatActivity, View.IOnClickListener 
     {
         string operator1 = null;
         TextView calcDisplay;
@@ -23,6 +23,9 @@ namespace calcApp
 
             calcDisplay = FindViewById<TextView>(Resource.Id.resultEditText);
         }
+
+
+
         public void OnClick(View v)
         {
             Button b = (Button)v;
@@ -76,6 +79,7 @@ namespace calcApp
             calcDisplay.Text = "";
             num1 = 0;
             num2 = 0;
+            operator1 = null;
         }
 
         public void Calculate(int num1, int num2, string op)
